@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Directory />
-      <Outlet /> {/* Displays Outlet <Shop/> below the directory */}
+      <Outlet /> 
     </div>
   );
 }
