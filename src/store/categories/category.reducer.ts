@@ -7,6 +7,10 @@ import {
   fetchCategoriesFailed,
 } from "./category.action";
 
+// import { addCollectionAndDocuments } from "../../utils/firebase/firebase.utils";
+// import { SHOP_DATA } from "../../shop-data";
+// addCollectionAndDocuments("categories", SHOP_DATA);
+
 export type CategoriesState = {
   readonly categories: Category[];
   readonly isLoading: boolean;

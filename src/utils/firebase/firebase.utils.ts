@@ -25,23 +25,29 @@ import {
 
 import { Category } from "../../store/categories/category.types";
 
+// Firebase configuration
+// Required for Firebase CRUD actions
 const firebaseConfig = {
-  apiKey: "AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk",
-  authDomain: "crwn-clothing-db-98d4d.firebaseapp.com",
-  projectId: "crwn-clothing-db-98d4d",
-  storageBucket: "crwn-clothing-db-98d4d.appspot.com",
-  messagingSenderId: "626766232035",
-  appId: "1:626766232035:web:506621582dab103a4d08d6",
+  apiKey: "AIzaSyCZ_zgnRf3olRIqf6j2sJFGtRIQ8VDkgkc",
+  authDomain: "stylish-dog-db.firebaseapp.com",
+  projectId: "stylish-dog-db",
+  storageBucket: "stylish-dog-db.appspot.com",
+  messagingSenderId: "7423031162",
+  appId: "1:7423031162:web:e05df46b2f9b52557e88c3",
+  measurementId: "G-L6Q87HQNNN",
 };
 
+// Initialize Firebase application
 const firebaseApp = initializeApp(firebaseConfig);
 
+// Initialize Firebase Google Authentication Provider Class
 const googleProvider = new GoogleAuthProvider();
-
 googleProvider.setCustomParameters({
+  // Prompt user to select an account
   prompt: "select_account",
 });
 
+// create Firebase Authentication instance
 export const auth = getAuth();
 export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
@@ -49,10 +55,11 @@ export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
 
 export const db = getFirestore();
-
 export type ObjectToAdd = {
   title: string;
 };
+
+// ADD/CREATE collections and documents
 export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
   collectionKey: string,
   objectsToAdd: T[]
@@ -69,6 +76,7 @@ export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
   console.log("done");
 };
 
+// GET/LOAD categories and documents
 export const getCategoriesAndDocuments = async (): Promise<Category[]> => {
   const collectionRef = collection(db, "categories");
   const q = query(collectionRef);
@@ -88,6 +96,7 @@ export type UserData = {
   email: string;
 };
 
+// ADD/CREATE new User with Google Account
 export const createUserDocumentFromAuth = async (
   userAuth: User,
   additionalInformation = {} as AdditionalInformation
@@ -95,7 +104,6 @@ export const createUserDocumentFromAuth = async (
   if (!userAuth) return;
 
   const userDocRef = doc(db, "users", userAuth.uid);
-
   const userSnapshot = await getDoc(userDocRef);
 
   if (!userSnapshot.exists()) {
@@ -117,6 +125,7 @@ export const createUserDocumentFromAuth = async (
   return userSnapshot as QueryDocumentSnapshot<UserData>;
 };
 
+// ADD/CREATE new User with email and password
 export const createAuthUserWithEmailAndPassword = async (
   email: string,
   password: string
@@ -126,6 +135,7 @@ export const createAuthUserWithEmailAndPassword = async (
   return await createUserWithEmailAndPassword(auth, email, password);
 };
 
+// LOGIN User with email and password
 export const signInAuthUserWithEmailAndPassword = async (
   email: string,
   password: string
@@ -135,6 +145,7 @@ export const signInAuthUserWithEmailAndPassword = async (
   return await signInWithEmailAndPassword(auth, email, password);
 };
 
+// LOGOUT User
 export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback: NextOrObserver<User>) =>

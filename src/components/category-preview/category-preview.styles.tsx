@@ -10,9 +10,14 @@ export const CategoryPreviewContainer = styled.div`
 `;
 
 export const Title = styled(Link)`
-  font-size: 28px;
-  margin-bottom: 25px;
   cursor: pointer;
+
+  margin-bottom: 25px;
+
+  color: #101820ff;
+  font-size: 30px;
+  font-family: "Seymour One", sans-serif;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1), 0px 8px 13px rgba(0, 0, 0, 0.1);
 `;
 
 export const Preview = styled.div`

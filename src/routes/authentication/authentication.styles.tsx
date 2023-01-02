@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const AuthenticationContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 900px;
-  margin: 30px auto;
+  width: 800px;
+  margin: 50px auto;
 
   @media screen and (max-width: 950px) {
     width: 760px;
@@ -14,6 +14,6 @@ export const AuthenticationContainer = styled.div`
     flex-direction: column;
     max-width: 350px;
     margin: 0 auto;
-    gap: 25px;
+    gap: 60px;
   }
 `;

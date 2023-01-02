@@ -5,14 +5,18 @@ export const SignUpContainer = styled.div`
   flex-direction: column;
   width: 380px;
 
-  @media screen and (max-width: 800px) {
-    width: unset;
-    .signup-button {
-      width: 100%;
-    }
+  .signup-button {
+    width: 100%;
   }
 
   h2 {
     margin: 10px 0;
+    font-family: "Seymour One", sans-serif;
+    font-size: 20px;
+  }
+
+  span {
+    color: #6b6b6b;
+    font-weight: 600;
   }
 `;

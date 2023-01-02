@@ -67,7 +67,10 @@ const SignInForm = () => {
           value={password}
         />
         <ButtonsContainer>
-          <Button type="submit"> Sign in</Button>
+          <Button buttonType={BUTTON_TYPE_CLASSES.signin} type="submit">
+            {" "}
+            Sign in
+          </Button>
           <Button
             buttonType={BUTTON_TYPE_CLASSES.google}
             type="button"

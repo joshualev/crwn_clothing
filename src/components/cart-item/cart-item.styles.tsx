@@ -1,13 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CartItemContainer = styled.div`
   width: 100%;
   display: flex;
-  height: 80px;
+  height: 100px;
   margin-bottom: 15px;
 
   img {
-    width: 30%;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 `;
 
@@ -22,4 +24,3 @@ export const ItemDetails = styled.div`
     font-size: 16px;
   }
 `;
-

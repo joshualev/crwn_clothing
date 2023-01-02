@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components";
 
-const subColor = "grey";
-const mainColor = "black";
+const subColor = "#778a9d";
+const mainColor = "#b8cbdf";
 
 const shrinkLabelStyles = css`
   top: -14px;
-  font-size: 12px;
-  color: ${mainColor}r;
+
+  font-size: 10px;
+  color: ${mainColor};
 `;
 
 type FormInputLabelProps = {
@@ -15,28 +16,35 @@ type FormInputLabelProps = {
 
 export const FormInputLabel = styled.label<FormInputLabelProps>`
   color: ${subColor};
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Seymour One", sans-serif;
+
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
+
+  top: 5px;
   transition: 300ms ease all;
   ${({ shrink }) => shrink && shrinkLabelStyles};
 `;
 
 export const Input = styled.input`
+  position: relative;
+
+  right: 30px;
   background: none;
-  background-color: white;
+
   color: ${subColor};
   font-size: 10px;
   padding: 10px 10px 10px 50px;
   display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
+
   border-bottom: 1px solid ${subColor};
-  margin: 25px 0;
+
+  margin: 5px 0;
+  margin-left: 30px;
 
   &:focus {
     outline: none;

@@ -7,6 +7,13 @@ export const SignInContainer = styled.div`
 
   h2 {
     margin: 10px 0;
+    font-family: "Seymour One", sans-serif;
+    font-size: 20px;
+  }
+
+  span {
+    color: #6b6b6b;
+    font-weight: 600;
   }
 
   @media screen and (max-width: 800px) {
@@ -16,10 +23,6 @@ export const SignInContainer = styled.div`
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
-    gap: 10px;
-  }
+  flex-direction: column;
+  gap: 10px;
 `;

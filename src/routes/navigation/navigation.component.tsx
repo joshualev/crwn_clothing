@@ -9,13 +9,12 @@ import { selectIsCartOpen } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { signOutStart } from "../../store/user/user.action";
 
-import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
-
 import {
   NavigationContainer,
   NavLinks,
   NavLink,
   LogoContainer,
+  Logo,
 } from "./navigation.styles";
 
 const Navigation = () => {
@@ -29,20 +28,21 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          <CrwnLogo className="logo" />
+          <Logo>Stylish Dog</Logo>
         </LogoContainer>
+
         <NavLinks>
           <NavLink to="/shop">SHOP</NavLink>
-
           {currentUser ? (
             <NavLink as="span" onClick={signOutUser}>
-              SIGN OUT
+              LOGOUT
             </NavLink>
           ) : (
-            <NavLink to="/auth">SIGN IN</NavLink>
+            <NavLink to="/auth">LOGIN</NavLink>
           )}
           <CartIcon />
         </NavLinks>
+
         {isCartOpen && <CartDropdown />}
       </NavigationContainer>
       <Outlet />

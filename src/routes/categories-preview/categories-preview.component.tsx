@@ -19,6 +19,7 @@ const CategoriesPreview = () => {
         <Spinner />
       ) : (
         Object.keys(categoriesMap).map((title) => {
+          console.log(title);
           const products = categoriesMap[title];
           return (
             <CategoryPreview key={title} title={title} products={products} />

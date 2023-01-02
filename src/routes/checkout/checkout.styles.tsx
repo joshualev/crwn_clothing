@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
-  width: 55%;
+  margin: 0 auto;
+  width: 80%;
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px auto 0;
 
   @media screen and (max-width: 800px) {
     width: unset;
@@ -27,18 +24,13 @@ export const CheckoutHeader = styled.div`
 `;
 
 export const HeaderBlock = styled.div`
-  text-transform: capitalize;
-  width: 23%;
+  font-size: 35px;
+  color: black;
 
-  &:last-child {
-    width: 8%;
-  }
+  font-family: "Seymour One", sans-serif;
 
-  @media screen and (max-width: 800px) {
-    &:last-child {
-      width: unset;
-    }
-  }
+  text-transform: uppercase;
+  margin: 0 auto;
 `;
 
 export const Total = styled.div`

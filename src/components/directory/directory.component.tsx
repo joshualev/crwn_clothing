@@ -13,33 +13,45 @@ export type DirectoryCategory = {
 const categories: DirectoryCategory[] = [
   {
     id: 1,
-    title: "hats",
-    imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-    route: "shop/hats",
+    title: "walk",
+    imageUrl:
+      "https://images.unsplash.com/photo-1610317872270-05b211340e22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80",
+    route: "shop/walk",
   },
   {
     id: 2,
-    title: "jackets",
-    imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-    route: "shop/jackets",
+    title: "adventure",
+    imageUrl:
+      "https://images.unsplash.com/photo-1600354279787-0a726615ef44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+    route: "shop/adventure",
   },
   {
     id: 3,
-    title: "sneakers",
-    imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-    route: "shop/sneakers",
+    title: "training",
+    imageUrl:
+      "https://images.unsplash.com/photo-1617994683620-273ed0d58628?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2302&q=80",
+    route: "shop/training",
   },
   {
     id: 4,
-    title: "womens",
-    imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-    route: "shop/womens",
+    title: "enrichment",
+    imageUrl:
+      "https://images.unsplash.com/photo-1589924749359-9697080c3577?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
+    route: "shop/enrichment",
   },
   {
     id: 5,
-    title: "mens",
-    imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-    route: "shop/mens",
+    title: "home",
+    imageUrl:
+      "https://images.unsplash.com/photo-1628195787435-4d64a0db4d0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80",
+    route: "shop/home",
+  },
+  {
+    id: 6,
+    title: "apparel",
+    imageUrl:
+      "https://images.unsplash.com/photo-1630359494609-8920f8e38989?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80",
+    route: "shop/apparel",
   },
 ];
 

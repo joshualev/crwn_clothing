@@ -1,239 +1,357 @@
-const SHOP_DATA = [
+export const SHOP_DATA = [
   {
-    title: "Hats",
+    title: "Walk",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
-        price: 25,
+        imageUrl:
+          "https://images.unsplash.com/photo-1534669393585-1982aa863bbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Leash and Collar Combo",
+        price: 50,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-        price: 18,
+        imageUrl:
+          "https://images.unsplash.com/photo-1588857925766-7f602c7f2e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nJTIwaGFybmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Therapy Dog Harness",
+        price: 50,
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
-        price: 35,
+        imageUrl:
+          "https://images.pexels.com/photos/7324391/pexels-photo-7324391.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        name: "Padded Harness",
+        price: 60,
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
-        price: 25,
+        imageUrl:
+          "https://images.unsplash.com/photo-1488830006793-1fb328d93241?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Slim-line Harness",
+        price: 35,
       },
       {
         id: 5,
-        name: "Green Beanie",
-        imageUrl: "https://i.ibb.co/YTjW3vF/green-beanie.png",
-        price: 18,
+        imageUrl:
+          "https://images.unsplash.com/photo-1627793451026-722efc720a95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Ultra-light Harness",
+        price: 35,
       },
       {
         id: 6,
-        name: "Palm Tree Cap",
-        imageUrl: "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
-        price: 14,
+        imageUrl:
+          "https://images.pexels.com/photos/1346086/pexels-photo-1346086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Puppy Harness",
+        price: 20,
       },
       {
         id: 7,
-        name: "Red Beanie",
-        imageUrl: "https://i.ibb.co/bLB646Z/red-beanie.png",
-        price: 18,
+        imageUrl:
+          "https://images.unsplash.com/photo-1440484213749-75455820d2d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Textured Harness",
+        price: 35,
       },
       {
         id: 8,
-        name: "Wolf Cap",
-        imageUrl: "https://i.ibb.co/1f2nWMM/wolf-cap.png",
-        price: 14,
+        imageUrl:
+          "https://images.unsplash.com/photo-1611688609296-f69a1c7be986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwaGFybmVzc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+        name: "Collar",
+        price: 65,
       },
       {
         id: 9,
-        name: "Blue Snapback",
-        imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
-        price: 16,
+        imageUrl:
+          "https://images.pexels.com/photos/14652203/pexels-photo-14652203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Premium Collar",
+        price: 25,
+      },
+      {
+        id: 10,
+        imageUrl:
+          "https://images.unsplash.com/photo-1590185640013-d6d42126f858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1436&q=80",
+        name: "Tuff Collar",
+        price: 35,
       },
     ],
   },
   {
-    title: "Sneakers",
+    title: "Adventure",
     items: [
       {
-        id: 10,
-        name: "Adidas NMD",
-        imageUrl: "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
-        price: 220,
-      },
-      {
         id: 11,
-        name: "Adidas Yeezy",
-        imageUrl: "https://i.ibb.co/dJbG1cT/yeezy.png",
-        price: 280,
+        imageUrl:
+          "https://media.istockphoto.com/id/611877636/photo/dog-wearing-yellow-oversize-humans-raincoat.jpg?b=1&s=170667a&w=0&k=20&c=TBeC6i_MPScfqiBV1CbmzimL4Akh1OyCajSe1V0zE8w=",
+        name: "Poncho",
+        price: 85,
       },
       {
         id: 12,
-        name: "Black Converse",
-        imageUrl: "https://i.ibb.co/bPmVXyP/black-converse.png",
-        price: 110,
+        imageUrl:
+          "https://media.istockphoto.com/id/1415840358/photo/puppies-american-cocker-spaniel-drinking-water-from-a-drinking-bowl-on-the-street.jpg?b=1&s=170667a&w=0&k=20&c=0QIwgfEMHut01JQJ4PsKe_a6HjcgCxFDsiyalJMmpg0=",
+        name: "Portable Water Bowl",
+        price: 18,
       },
       {
         id: 13,
-        name: "Nike White AirForce",
-        imageUrl: "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
-        price: 160,
+        imageUrl:
+          "https://media.istockphoto.com/id/1329907497/photo/an-irish-terrier-dog-lies-on-the-grass-and-drinks-from-a-portable-travel-folding-bowl-a-red.jpg?b=1&s=170667a&w=0&k=20&c=OXDt-68QQCDP4CWOmq7FdzYHsT_J5P_RwRNLklIBTR8=",
+        name: "Portable Bowl",
+        price: 10,
       },
       {
         id: 14,
-        name: "Nike Red High Tops",
-        imageUrl: "https://i.ibb.co/QcvzydB/nikes-red.png",
-        price: 160,
-      },
-      {
-        id: 15,
-        name: "Nike Brown High Tops",
-        imageUrl: "https://i.ibb.co/fMTV342/nike-brown.png",
-        price: 160,
-      },
-      {
-        id: 16,
-        name: "Air Jordan Limited",
-        imageUrl: "https://i.ibb.co/w4k6Ws9/nike-funky.png",
-        price: 190,
-      },
-      {
-        id: 17,
-        name: "Timberlands",
-        imageUrl: "https://i.ibb.co/Mhh6wBg/timberlands.png",
-        price: 200,
-      },
-    ],
-  },
-  {
-    title: "Jackets",
-    items: [
-      {
-        id: 18,
-        name: "Black Jean Shearling",
-        imageUrl: "https://i.ibb.co/XzcwL5s/black-shearling.png",
-        price: 125,
-      },
-      {
-        id: 19,
-        name: "Blue Jean Jacket",
-        imageUrl: "https://i.ibb.co/mJS6vz0/blue-jean-jacket.png",
-        price: 90,
-      },
-      {
-        id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "https://i.ibb.co/N71k1ML/grey-jean-jacket.png",
-        price: 90,
-      },
-      {
-        id: 21,
-        name: "Brown Shearling",
-        imageUrl: "https://i.ibb.co/s96FpdP/brown-shearling.png",
-        price: 165,
-      },
-      {
-        id: 22,
-        name: "Tan Trench",
-        imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
-        price: 185,
-      },
-    ],
-  },
-  {
-    title: "Womens",
-    items: [
-      {
-        id: 23,
-        name: "Blue Tanktop",
-        imageUrl: "https://i.ibb.co/7CQVJNm/blue-tank.png",
-        price: 25,
-      },
-      {
-        id: 24,
-        name: "Floral Blouse",
-        imageUrl: "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-        price: 20,
-      },
-      {
-        id: 25,
-        name: "Floral Dress",
-        imageUrl: "https://i.ibb.co/KV18Ysr/floral-skirt.png",
-        price: 80,
-      },
-      {
-        id: 26,
-        name: "Red Dots Dress",
-        imageUrl: "https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png",
-        price: 80,
-      },
-      {
-        id: 27,
-        name: "Striped Sweater",
-        imageUrl: "https://i.ibb.co/KmSkMbH/striped-sweater.png",
-        price: 45,
-      },
-      {
-        id: 28,
-        name: "Yellow Track Suit",
-        imageUrl: "https://i.ibb.co/v1cvwNf/yellow-track-suit.png",
-        price: 135,
-      },
-      {
-        id: 29,
-        name: "White Blouse",
-        imageUrl: "https://i.ibb.co/qBcrsJg/white-vest.png",
-        price: 20,
-      },
-    ],
-  },
-  {
-    title: "Mens",
-    items: [
-      {
-        id: 30,
-        name: "Camo Down Vest",
-        imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
-        price: 325,
-      },
-      {
-        id: 31,
-        name: "Floral T-shirt",
-        imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
-        price: 20,
-      },
-      {
-        id: 32,
-        name: "Black & White Longsleeve",
-        imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
-        price: 25,
-      },
-      {
-        id: 33,
-        name: "Pink T-shirt",
-        imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
-        price: 25,
-      },
-      {
-        id: 34,
-        name: "Jean Long Sleeve",
-        imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2020/05/08/23/04/dog-5147649__480.jpg",
+        name: "Adventure Harness 1.0",
         price: 40,
       },
       {
-        id: 35,
-        name: "Burgundy T-shirt",
-        imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
+        id: 15,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2020/03/02/01/23/dog-4894568__480.jpg",
+        name: "Adventure Harness 2.0",
+        price: 70,
+      },
+      {
+        id: 16,
+        imageUrl:
+          "https://images.unsplash.com/photo-1641063580993-9597f09f9a59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
+        name: "Water-resistant Jacket",
         price: 25,
+      },
+      {
+        id: 17,
+        imageUrl:
+          "https://media.istockphoto.com/id/1343687951/photo/protective-dog-shoes.jpg?b=1&s=170667a&w=0&k=20&c=ci5_dGyS15xJhBbKO_ECCS3P7-_AKNuU0T6pt15kh3Q=",
+        name: "Non-slip Boots",
+        price: 85,
+      },
+    ],
+  },
+  {
+    title: "Training",
+    items: [
+      {
+        id: 25,
+        imageUrl:
+          "https://images.unsplash.com/photo-1612104925465-050a39e553f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Halter",
+        price: 15,
+      },
+      {
+        id: 26,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2022/08/02/12/53/dog-7360328__480.jpg",
+        name: "Jumping Obstacle 1.0",
+        price: 25,
+      },
+      {
+        id: 27,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2013/02/10/14/48/man-80121__480.jpg",
+        name: "Jumping Obstacle 2.0",
+        price: 105,
+      },
+      {
+        id: 28,
+        imageUrl:
+          "https://images.unsplash.com/photo-1592468257342-8375cb556a69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+        name: "Training Treats",
+        price: 9,
+      },
+      {
+        id: 29,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2019/07/12/18/29/agility-4333339__480.jpg",
+        name: "Running Obstacle",
+        price: 12,
+      },
+      {
+        id: 30,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2019/10/25/18/34/dog-4577659__480.jpg",
+        name: "Tunnel",
+        price: 30,
+      },
+      {
+        id: 31,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2019/06/02/08/55/welsh-corgi-pembroke-4245905__480.jpg",
+        name: "Jumping Obstacle 3.0",
+        price: 150,
+      },
+      {
+        id: 32,
+        imageUrl:
+          "https://media.istockphoto.com/id/1319937904/photo/training-a-hunting-dog-with-a-clicker.jpg?b=1&s=170667a&w=0&k=20&c=yedLs_z14-GL7K4-eEAofd3KyL9_XQU-6bvm_sB09uU=",
+        name: "Clicker",
+        price: 9,
+      },
+    ],
+  },
+  {
+    title: "Enrichment",
+    items: [
+      {
+        id: 37,
+        imageUrl:
+          "https://media.istockphoto.com/id/1153247745/photo/two-athletic-brown-french-bulldog-dogs-playing-fetchwith-ball-at-the-beach-with-a-maritime.jpg?b=1&s=170667a&w=0&k=20&c=uILYtgrsUT1-ndO69y_ERRr-2JXXBIMjImABPRjrUrk=",
+        name: "Tuff Ball",
+        price: 18,
+      },
+      {
+        id: 38,
+        imageUrl:
+          "https://images.unsplash.com/photo-1601758124277-f0086d5ab050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGRvZyUyMHRveXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Tuff Bone",
+        price: 20,
+      },
+      {
+        id: 39,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2021/05/09/18/05/black-german-shepherd-6241674_960_720.jpg",
+        name: "Tug Toy",
+        price: 30,
+      },
+      {
+        id: 40,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2019/09/29/09/55/puller-4512752__480.jpg",
+        name: "Tuff Ring",
+        price: 35,
+      },
+      {
+        id: 41,
+        imageUrl:
+          "https://images.unsplash.com/photo-1621508638997-e30808c10653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvZyUyMHRveXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+        name: "Moody Squid",
+        price: 22,
+      },
+      {
+        id: 42,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2016/08/01/13/13/dog-1561011__340.jpg",
+        name: "Spiky Ball",
+        price: 14,
+      },
+      {
+        id: 43,
+
+        imageUrl:
+          "https://images.unsplash.com/photo-1638472495784-a7171c2f5f01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGRvZyUyMHRveXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "High-Vis Frisbee",
+        price: 19,
+      },
+    ],
+  },
+  {
+    title: "Home",
+    items: [
+      {
+        id: 49,
+        imageUrl:
+          "https://images.pexels.com/photos/3198004/pexels-photo-3198004.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        name: "Premium Bowl",
+        price: 30,
+      },
+      {
+        id: 50,
+        imageUrl:
+          "https://plus.unsplash.com/premium_photo-1663127595540-9482e32af78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZyUyMGJvd2x8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        name: "Standard Bowl",
+        price: 15,
+      },
+      {
+        id: 51,
+        imageUrl:
+          "https://images.pexels.com/photos/8434744/pexels-photo-8434744.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        name: "Removable Bowl",
+        price: 55,
+      },
+      {
+        id: 52,
+
+        imageUrl:
+          "https://media.istockphoto.com/id/962467302/photo/dog-dressed-as-businessmen-eating-from-bowl-labelled-the-boss.jpg?b=1&s=170667a&w=0&k=20&c=YQ0RSbQxMG0kx6sJkGDQ2aon_nWoHKYa4ug6dq-Ds_o=",
+        name: "Boss Bowl",
+        price: 20,
+      },
+      {
+        id: 53,
+        imageUrl:
+          "https://plus.unsplash.com/premium_photo-1664094921262-d58cfb6e885b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwYmVkfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+        name: "Sofa",
+        price: 110,
+      },
+      {
+        id: 54,
+        imageUrl:
+          "https://images.pexels.com/photos/11060015/pexels-photo-11060015.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        name: "Premium Sofa",
+        price: 155,
+      },
+      {
+        id: 55,
+
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2020/05/25/02/48/dog-sleeping-5216758__480.jpg",
+        name: "Cozy Bed",
+        price: 85,
+      },
+      {
+        id: 56,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2018/11/17/19/43/dog-houses-3821847__480.jpg",
+        name: "Dog House",
+        price: 950,
+      },
+    ],
+  },
+  {
+    title: "Apparel",
+    items: [
+      {
+        id: 61,
+        imageUrl:
+          "https://images.unsplash.com/photo-1562347851-32d44aa232ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nJTIwaGF0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Hoodie",
+        price: 25,
+      },
+      {
+        id: 62,
+        imageUrl:
+          "https://images.pexels.com/photos/4061379/pexels-photo-4061379.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        name: "Premium Hoodie",
+        price: 85,
+      },
+      {
+        id: 63,
+        imageUrl:
+          "https://images.unsplash.com/photo-1488569098285-adeecb95641f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Knit Pullover",
+        price: 40,
+      },
+      {
+        id: 64,
+        imageUrl:
+          "https://images.unsplash.com/photo-1607332297537-4b219b26a0b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYxfHxkb2clMjB0b3l8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        name: "Sweater",
+        price: 55,
+      },
+      {
+        id: 65,
+        imageUrl:
+          "https://images.unsplash.com/photo-1530041539828-114de669390e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGRvZyUyMGhhcm5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        name: "Raincoat",
+        price: 55,
+      },
+      {
+        id: 66,
+        imageUrl:
+          "https://cdn.pixabay.com/photo/2020/05/25/19/44/dog-halter-5220253_1280.jpg",
+        name: "Premium Bandana",
+        price: 40,
       },
     ],
   },
 ];
-
-export default SHOP_DATA;

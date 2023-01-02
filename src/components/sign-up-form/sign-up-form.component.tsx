@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { AuthError, AuthErrorCodes } from "firebase/auth";
 
 import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import { SignUpContainer } from "./sign-up-form.styles";
 import { signUpStart } from "../../store/user/user.action";
@@ -92,7 +92,11 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
 
-        <Button className="signup-button" type="submit">
+        <Button
+          buttonType={BUTTON_TYPE_CLASSES.signin}
+          className="signup-button"
+          type="submit"
+        >
           Sign Up
         </Button>
       </form>

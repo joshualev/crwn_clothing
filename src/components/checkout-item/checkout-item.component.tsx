@@ -5,11 +5,12 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   CheckoutItemContainer,
   ImageContainer,
-  BaseSpan,
+  ProductName,
   Quantity,
   Arrow,
   Value,
   RemoveButton,
+  Price,
 } from "./checkout-item.styles";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
@@ -42,14 +43,15 @@ const CheckoutItem: FC<CartItemProps> = memo(({ cartItem }) => {
       <ImageContainer>
         <img src={imageUrl} alt={`${name}`} />
       </ImageContainer>
-      <BaseSpan> {name} </BaseSpan>
+      <ProductName> {name} </ProductName>
       <Quantity>
-        <Arrow onClick={removeItemHandler}>&#10094;</Arrow>
+        <Arrow onClick={removeItemHandler}>−</Arrow>
         <Value>{quantity}</Value>
-        <Arrow onClick={addItemHandler}>&#10095;</Arrow>
+        <Arrow onClick={addItemHandler}>+</Arrow>
       </Quantity>
-      <BaseSpan> {price}</BaseSpan>
-      <RemoveButton onClick={clearItemHandler}>&#10005;</RemoveButton>
+
+      <Price>${price * quantity}.00 AUD</Price>
+      <RemoveButton onClick={clearItemHandler}>REMOVE</RemoveButton>
     </CheckoutItemContainer>
   );
 });
