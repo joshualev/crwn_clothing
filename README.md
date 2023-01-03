@@ -1,6 +1,5 @@
 # Stylish Dogs
 
-This application was deployed on Netlify.com.
 ### To view a live version of the app, please click [here](https://extraordinary-heliotrope-8f757e.netlify.app/)
 
 Stylish Dogs is an e-commerce website for dog specific products. Users can access the collection of available items, add them to a cart, alter that cart, checkout.
@@ -19,3 +18,4 @@ This app was built using:
 - Express
 - Node JS
 - Firebase
+- Deployed on [Netlify](https://www.netlify.com/)
